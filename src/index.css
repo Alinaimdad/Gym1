@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer components {
+  .inputStyle {
+    @apply p-3 w-full rounded-md bg-gray-800/80 border border-gray-600 text-white placeholder-gray-400 outline-none transition duration-300 focus:ring-2 focus:ring-red-400 focus:border-red-400 focus:bg-gray-900;
+  }
+}
+.color-empty {
+  fill: #ebedf0;
+}
+.color-github-1 {
+  fill: #9be9a8;
+}
+.color-github-2 {
+  fill: #40c463;
+}
+.color-github-3 {
+  fill: #30a14e;
+}
+.color-github-4 {
+  fill: #216e39;
+} 
+
