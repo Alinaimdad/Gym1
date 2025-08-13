@@ -4,10 +4,8 @@ import menu_icon from './menu_icon.svg';
 import star_icon from './star_icon.svg';
 import left_arrow from './left_arrow.svg';
 import right_arrow from './right_arrow.svg';
-import header_img from './header_img.png';
+import header1_img from './header1_img.jpg';
 import { FaEnvelope } from 'react-icons/fa';
-
-
 
 // PROJECT IMAGES
 import project_1 from './project_1.jpg';
@@ -24,7 +22,6 @@ import profile_3 from './profile_3.png';
 
 // ASSETS EXPORT
 export const assets = {
-  
   cross_icon,
   menu_icon,
   star_icon,
@@ -39,45 +36,42 @@ export const assets = {
   profile_1,
   profile_2,
   profile_3,
-  header_img,
- 
- 
+  header1_img,
 };
 
-// PROJECT DATA
+// PROJECT DATA (Updated for Pakistan)
 export const projectsData = [
   {
-    title: "Skyline Haven",
-    location: "California",
+    title: "Sky Towers",
+    location: "Karachi",
     img: assets.project_1
   },
   {
-    title: "Vista Verde",
-     location: "San Francisco",
+    title: "Gulberg Heights",
+    location: "Lahore",
     img: assets.project_2
   },
   {
-    title: "Serenity Suites",
-    location: "Chicago",
+    title: "Serene Villas",
+    location: "Islamabad",
     img: assets.project_3
   },
   {
-    title: "Central Square",
-    location: "Los Angeles",
-    img:assets.project_4
+    title: "Central Residency",
+    location: "Rawalpindi",
+    img: assets.project_4
   },
   {
-    title: "Ocean View",
-    location: "Miami",
+    title: "Ocean Breeze Apartments",
+    location: "Gwadar",
     img: assets.project_5
   },
   {
-    title: "Golden Peak",
-    location: "New York",
+    title: "Margalla View Residences",
+    location: "Murree",
     img: assets.project_6
   },
 ];
-
 
 // TESTIMONIAL DATA
 export const TestimonialsData = [
@@ -106,4 +100,3 @@ export const TestimonialsData = [
     text: "In just 3 months, I transformed my body. The energy here is unmatched — it's my second home now!"
   }
 ];
-

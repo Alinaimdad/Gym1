@@ -1,3 +1,4 @@
+
 // import React, { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
 // import { motion } from 'framer-motion';
@@ -62,9 +63,9 @@
 //   );
 
 //   return (
-//     <div className="min-h-screen bg-gray-900 flex items-center justify-center pt-20 pb-10 px-4 font-sans">
+//     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-red-900 px-4 py-16 font-sans">
 //       <motion.div
-//         className="w-full max-w-xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl p-10 text-white transition-all duration-300 hover:shadow-red-500/20"
+//         className="w-full max-w-xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl p-10 text-white transition-all duration-300 hover:shadow-red-500/20 mx-auto"
 //         variants={containerVariants}
 //         initial="hidden"
 //         animate="visible"
@@ -126,12 +127,17 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaUser, FaEnvelope, FaPhone, FaLock } from 'react-icons/fa';
+import bgSignup from '../assets/bg-signup.jpg'; // ✅ Correct Vite image import
 
 const Signup = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    firstName: '', lastName: '', email: '',
-    phone: '', password: '', confirmPassword: ''
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    password: '',
+    confirmPassword: ''
   });
 
   const handleChange = (e) => {
@@ -186,9 +192,12 @@ const Signup = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-red-900 px-4 py-16 font-sans">
+    <div
+      className="min-h-screen bg-cover bg-center px-4 py-16 font-sans flex items-center justify-center"
+      style={{ backgroundImage: `url(${bgSignup})` }} // ✅ Fixed background
+    >
       <motion.div
-        className="w-full max-w-xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl p-10 text-white transition-all duration-300 hover:shadow-red-500/20 mx-auto"
+        className="w-full max-w-xl bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl p-10 text-white transition-all duration-300 hover:shadow-red-500/20"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
